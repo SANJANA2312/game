@@ -9,6 +9,8 @@ for (let i = 1; i <= 20; i++) {
     const button = document.createElement("button");
     button.innerText =  i;
     button.addEventListener("click", () => {
+        console.log("CLICKED");
+
         if (fizzbuzz(i) == "fizzbuzz") { 
             button.innerText = "fizzbuzz";
         //button.style.backgroundColor = "#ffff00"; 
@@ -20,10 +22,7 @@ for (let i = 1; i <= 20; i++) {
         if (fizzbuzz(i) == "buzz") { button.innerText = "buzz";
             button.className = "buzz" ;
         }
-        
-    
-        
-          });
+     });
     
     grid.appendChild(button);
    
